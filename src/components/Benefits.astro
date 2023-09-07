@@ -2,13 +2,13 @@
 import Card from "./UI/Card.astro";
 ---
 
-<section class="py-12">
+<section class="py-12 bg-slate-50">
   <div class="container">
-    <h2 class="text-2xl font-bold mb-2">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-8">
       What you will learn in this exclusive webinar
     </h2>
 
-    <ul>
+    <ul class="grid gap-6 md:grid-cols-3">
       <Card
         icon="fa-solid fa-laptop"
         title="Work from anywhere with just a laptop"
@@ -16,15 +16,15 @@ import Card from "./UI/Card.astro";
       />
 
       <Card
-        icon="fa-solid fa-check"
-        title="Work from anywhere with just a laptop"
-        text="Freedom! That’s what you’ll get after implementing the tactics I’ll present. You’ll live your dream life."
+        icon="fa-regular fa-circle-check"
+        title="The easy way to start your own business"
+        text="I’ll cover all the basics to start your own business and start generating revenue in as few as 6 weeks. Proven tactics!"
       />
 
       <Card
-        icon="fa-solid fa-sack-dollar"
-        title="Work from anywhere with just a laptop"
-        text="Freedom! That’s what you’ll get after implementing the tactics I’ll present. You’ll live your dream life."
+        icon="fa-regular fa-gem"
+        title="My Step-by-Step Formula for success"
+        text="I’ll reveal my step-by-step formula for you to start generating 6 figures a year starting in 2023!"
       />
     </ul>
   </div>
