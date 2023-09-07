@@ -1,1 +1,22 @@
-<aside>About</aside>
+---
+import { Image } from "astro:assets";
+import author from "../assets/images/author.webp";
+---
+
+<article class="section bg-slate-50">
+  <div class="container grid md:grid-cols-2 gap-8 items-center">
+    <Image src={author} alt="Anna Muller" class="" />
+    <section>
+      <h2 class="text-3xl font-bold mb-1">About the author</h2>
+      <p class="text-lg">
+        Anna Müller specialize in helping individuals who want to start,
+        establish, or enhance their online business to get comfortable with
+        technology and marketing. She has been championing the benefits of
+        online marketing for more years than she cares to admit. She is a
+        passionate advocate for small businesses and start-up entrepreneurs and
+        loves using social media to spread the word about how to use online
+        marketing to grow your business
+      </p>
+    </section>
+  </div>
+</article>
