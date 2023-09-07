@@ -1,1 +1,46 @@
-<section>Testimonials</section>
+---
+import Testimonial from "./UI/Testimonial.astro";
+import clientA from "../assets/images/testimonial-a.webp";
+import clientB from "../assets/images/testimonial-b.webp";
+import clientC from "../assets/images/testimonial-c.webp";
+import clientD from "../assets/images/testimonial-d.webp";
+---
+
+<section class="[ section ]">
+  <div class="container">
+    <header>
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+        Testimonials from previous clients
+      </h2>
+      <p class="mb-8 text-lg">
+        Over a 100 clients have quit their 9-5 and become laptop entrepreneurs
+      </p>
+    </header>
+    <section class="grid md:grid-cols-2 gap-8">
+      <Testimonial
+        img={clientA}
+        alt="woman working with a laptop at the beach"
+        name="Emma Brown"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      />
+      <Testimonial
+        img={clientB}
+        alt="man working with a laptop at the beach"
+        name="Braxton MacQuoid"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      />
+      <Testimonial
+        img={clientC}
+        alt="'woman at the beach with a laptop"
+        name="Bridget Davenport"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      />
+      <Testimonial
+        img={clientD}
+        alt="man near the ocean with a laptop"
+        name="Lucas Martinez"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      />
+    </section>
+  </div>
+</section>
