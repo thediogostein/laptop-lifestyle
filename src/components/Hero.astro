@@ -1,10 +1,9 @@
 ---
 import Form from "./UI/Form.astro";
+import bg from "../assets/images/herobg.webp";
 ---
 
-<header
-  class="bg-teal-900 text-white py-12 min-h-[80vh] grid place-items-center"
->
+<header class="[ hero ] text-white py-12 min-h-[80vh] grid place-items-center">
   <div class="container">
     <div class="lg:w-2/5">
       <p class="uppercase text-yellow-300 sm:text-2xl">Free webinar</p>
@@ -16,13 +15,44 @@ import Form from "./UI/Form.astro";
       </h2>
 
       <Form />
-
-      <p>
-        <span class="sr-only">The webinar starts at</span>
-        <time datetime="2024-12-21T21:00:00"
-          >December, 21st - 2024 at 9:00PM EST</time
-        >
-      </p>
     </div>
   </div>
 </header>
+
+<style>
+  .hero {
+    background: rgb(17, 94, 89);
+
+    background:
+      url("../assets/images/herobg.webp") no-repeat,
+      linear-gradient(
+        90deg,
+        rgba(4, 47, 46, 1) 30%,
+        rgb(8, 77, 75, 0.9) 60%,
+        rgba(17, 94, 89, 0.8) 100%
+      );
+    background-size: cover;
+    background-position: 80%;
+
+    background-blend-mode: multiply;
+  }
+
+  @media (min-width: 1024px) {
+    .hero {
+      background: rgb(17, 94, 89);
+
+      background:
+        url("../assets/images/herobg.webp") no-repeat,
+        linear-gradient(
+          90deg,
+          rgba(4, 47, 46, 1) 30%,
+          rgb(8, 77, 75, 0.9) 48%,
+          rgba(17, 94, 89, 0.3) 100%
+        );
+      background-size: cover;
+      background-position: 80%;
+
+      background-blend-mode: multiply;
+    }
+  }
+</style>

@@ -1,1 +1,19 @@
-<section>Cta</section>
+---
+import Form from "./UI/Form.astro";
+---
+
+<section class="[ section ] bg-teal-900">
+  <div class="container grid md:grid-cols-2 items-center gap-2 md:gap-4">
+    <div>
+      <h2 class="text-3xl font-bold mb-2 text-slate-50">
+        Our webinars are always over capacity!
+      </h2>
+      <p class="text-lg mb-4 text-slate-100">
+        Secure your seat now, once we max out our capacity we’ll close the
+        registration.
+      </p>
+    </div>
+
+    <Form />
+  </div>
+</section>
